@@ -1,0 +1,386 @@
+:root {
+    --color1: #392948;
+    --color2: #f44555;
+    --textoBlanco: #fff;
+    --gradiante: linear-gradient(90deg, rgba(57,41,72,1) 0%, rgba(244,69,85,1) 100%);
+    --gradiante-invertido: linear-gradient(90deg, rgba(244,69,85,1) 0%, rgba(57,41,72,1) 100%);
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('/Fonts/Montserrat-Black.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url('/Fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url('/Fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Margin */
+/* Top */
+.mt-0 {
+    margin-top: 0.25rem;
+}
+
+.mt-1 {
+    margin-top: 0.50rem;
+}
+
+.mt-2 {
+    margin-top: 0.75rem;
+}
+
+.mt-3 {
+    margin-top: 1.00rem;
+}
+
+/* Bottom */
+.mb-0 {
+    margin-bottom: 0.25rem;
+}
+
+.mb-1 {
+    margin-bottom: 0.50rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.75rem;
+}
+
+.mb-3 {
+    margin-bottom: 1.00rem;
+}
+/* Left */
+.ml-3{
+    margin-left: 1rem;
+}
+/* Right */
+.mr-3{
+    margin-right: 1rem;
+}       
+
+/* Padding */
+/* Top */
+.pt-0 {
+    padding-top: 0.25rem;
+}
+
+.pt-1 {
+    padding-top: 0.50rem;
+}
+
+.pt-2 {
+    padding-top: 0.75rem;
+}
+
+.pt-3 {
+    padding-top: 1.00rem;
+}
+
+/* Bottom */
+.pb-0 {
+    padding-bottom: 0.25rem;
+}
+
+.pb-1 {
+    padding-bottom: 0.50rem;
+}
+
+.pb-2 {
+    padding-bottom: 0.75rem;
+}
+
+.pb-3 {
+    padding-bottom: 1.00rem;
+}
+
+/* Left */
+.pl-3{
+    margin-left: 1rem;
+}
+/* Right */
+.pr-3{
+    margin-right: 1rem;
+}   
+
+/* Fonts */
+.font-bold{
+    font-family: Bold;
+}
+
+.font-medium{
+    font-family: Medium;
+}
+
+.font-light{
+    font-family: Light;
+}
+
+/* Background color gradiante */
+.gradiante{
+    background: var(--gradiante);
+}
+
+/* Color letras */
+.colorBlanco{
+    color: var(--textoBlanco);
+}
+
+.colorSecundario{
+    color: var(--color2);
+}
+
+.colorPrimario{
+    color: var(--color1);
+}
+
+/* Tamaño letras */
+.grande{
+    max-width: 70%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.mediano{
+    max-width: 85%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.container-3{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+img {
+    max-width: 75%;
+    height: auto;
+}
+
+span{
+    font-size: 2rem;
+    color: vaR(--color2);
+}
+
+input {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    transition: all 0.3s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+/******************************/
+.top-bar {
+    background-color: var(--color1);
+    color: var(--textoBlanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 0 20px;
+  }
+  
+  .left-text {
+    font-family: bold;
+    font-size: 18px;
+  }
+  
+  .right-time {
+    font-size: 14px;
+  }
+
+  /***************************/
+  .left-column {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .centradoEnDiv{
+    display: grid;
+    max-width: 75%;
+  }
+  
+  .rounded-input {
+    font-size: 50px;
+    text-transform: uppercase;
+    background: var(--gradiante-invertido);
+    border-radius: 12px;
+    border: 1px solid #ccc;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .rounded-button {
+    border-radius: 25px;
+    background-color: var(--textoBlanco);
+    border: none;
+    color: var(--color1);
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: bold;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .right-column{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+  .right-column img {
+    width: 100%;
+  }
+
+.separador{    
+  border: 10px solid var(--color2);
+  width: 100%;
+  height: 10px;
+  box-sizing: border-box;
+}
+
+.separador-2{    
+    max-width: 700px;
+    margin-bottom: 50px;
+    width: 100%;
+    background-color: var(--color2);
+    height: 5px;
+    box-sizing: border-box;
+  }
+  
+/* CENTRAR CHECKBOX CON INPUT */
+
+        /****** NO CONSEGUIDO *****/
+  .micheck {
+    display: flex;
+    align-items: center;
+            
+  }
+  
+
+.rounded-box{
+    border-radius: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: var(--color1);
+    color: var(--textoBlanco);
+    text-transform: uppercase;
+    text-align: center;
+
+}
+  
+  
+
+/* imagen en div con grid 3 colum**/
+.imgmin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgmin img{
+    min-width: 250px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .grande{
+        max-width: 100%;
+        font-size: 50px;
+        text-align: center;
+    }
+    .rounded-input {
+        font-size: 25px;
+    }
+    .container {
+        max-width: 100%;
+    }
+
+    .card {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .top-bar{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .left-text, .right-time {
+        justify-self: center;
+        text-align: center;
+    }
+
+    .container-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-column{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    } 
+
+    .rounded-box{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+}
