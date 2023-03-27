@@ -315,6 +315,12 @@ input {
   box-sizing: border-box;
 }
 
+.separador-1{    
+    border: 6px solid var(--color2);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
 .separador-2{    
     max-width: 700px;
     margin-bottom: 50px;
@@ -377,6 +383,11 @@ input {
     max-width: 200px;
 }
 
+.img-2{
+    min-height: 600px;
+    border-radius: 15px;
+}
+
 .align-left{
     text-align: left;
 }
@@ -393,12 +404,7 @@ input {
     max-width: 80%;
 }
 
-/* Contenedor iconos */
-.iconos-contenedor {
-    display: flex;
-    justify-content: center;
-    position: relative; 
-}
+
 
 .linea {
   position: absolute; /* Establece posición absoluta para posicionar la línea */
@@ -424,6 +430,41 @@ input {
     padding-right: 35px;
 }
   
+.icono-2{
+    color: var(--textoBlanco);
+    margin: 0 auto;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+/* Contenedor iconos */
+.iconos-contenedor {
+    display: flex;
+    justify-content: center;
+    position: relative; 
+}
+
+.iconos-contenedor-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.iconos-contenedor-1 {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .iconos-contenedor-1 li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .iconos-contenedor li p {
+    text-align: center;
+  }
 
 @media screen and (max-width: 768px) {
     .grande{
@@ -486,6 +527,14 @@ input {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .img-2{
+        min-height: auto;
+    }
+    .iconos-contenedor-1 {
+        display: flex;
+        justify-content: center;
+        position: relative; 
     }
 
 }
