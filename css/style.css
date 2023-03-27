@@ -159,6 +159,12 @@
     text-align: center;
 }
 
+.pequenio{
+    max-width: 85%;
+    font-size: 20px;
+    text-align: left;
+}
+
 .container {
     max-width: 100%;
     margin: 0 auto;
@@ -178,6 +184,13 @@
     padding-bottom: 50px;
 }
 
+.container-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     font-size: 2.5em;
 }
@@ -193,7 +206,7 @@ img {
 
 span{
     font-size: 2rem;
-    color: vaR(--color2);
+    color: var(--color2);
 }
 
 input {
@@ -244,6 +257,13 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .left-column-img{
+    text-align: center;
+    display: flex;
+    justify-content: right;
+    align-items: end;
   }
 
   .centradoEnDiv{
@@ -351,6 +371,12 @@ input {
     margin-bottom: 35px;
 }
 
+.imgMuj-1{
+    border-radius: 100%;
+    border: 20px solid var(--color2);
+    max-width: 200px;
+}
+
 .align-left{
     text-align: left;
 }
@@ -360,6 +386,12 @@ input {
     padding-left: 10px;
     border-radius: 10px;
   }
+
+.separador-izquierdo-1{
+    border-left: 5px solid var(--color2);
+    padding-left: 15px;
+    max-width: 80%;
+}
 
 /* Contenedor iconos */
 .iconos-contenedor {
@@ -449,6 +481,11 @@ input {
         padding-left: 15px;
         padding-right: 15px;
     }
-
+    .left-column-img{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
