@@ -830,4 +830,5 @@ a{
     .card:nth-child(2) {
         order: -1;
       }
-}
+
+      }
