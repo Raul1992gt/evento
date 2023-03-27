@@ -2,6 +2,10 @@
     --color1: #392948;
     --color2: #f44555;
     --textoBlanco: #fff;
+    --basic: #ff8000;
+    --standar: #090380;
+    --premium: #3a4142;
+    --rojo: #ff0000;
     --gradiante: linear-gradient(90deg, rgba(57,41,72,1) 0%, rgba(244,69,85,1) 100%);
     --gradiante-invertido: linear-gradient(90deg, rgba(244,69,85,1) 0%, rgba(57,41,72,1) 100%);
 }
@@ -176,6 +180,13 @@
     grid-gap: 2rem;
 }
 
+.container-2-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+    max-width: 90%;
+}
+
 .container-3{
     max-width: 100%;
     display: grid;
@@ -259,6 +270,13 @@ input {
     align-items: center;
   }
 
+  .left-column-1 {
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
   .left-column-img{
     text-align: center;
     display: flex;
@@ -302,6 +320,14 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+}   
+.right-column-1{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
 } 
 
   .right-column img {
@@ -317,6 +343,18 @@ input {
 
 .separador-1{    
     border: 6px solid var(--color2);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .separador-3{    
+    border: 2px solid var(--color2);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .separador-4{    
+    border: 2px solid var(--color1);
     width: 100%;
     box-sizing: border-box;
   }
@@ -381,6 +419,13 @@ input {
     border-radius: 100%;
     border: 20px solid var(--color2);
     max-width: 200px;
+}
+
+.imgMuj-2{
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-bottom: 35px;
 }
 
 .img-2{
@@ -466,10 +511,70 @@ input {
     text-align: center;
   }
 
+  .card {
+    background-color: var(--textoBlanco);    
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    position: relative; /* añade posición relativa al contenedor de la tarjeta */
+  }
+  
+  .title {
+    color: var(--standar);
+  }
+  
+  
+  .fa-check {
+    color: green;
+  }
+  
+  .fa-times {
+    color: red;
+  }
+  
+  .price {
+    background-color: var(--standar);
+    
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .price p {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .price button {
+    margin-top: 10px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    left: 25%; /* añade un desplazamiento lateral al botón para centrarlo */
+  }
+  
+.fondoRojo{
+    background-color: var(--rojo);
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+.max50{
+    max-width: 50%;
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     .grande{
         max-width: 100%;
         font-size: 50px;
+        text-align: center;
+    }
+
+    .pequenio{
         text-align: center;
     }
     .rounded-input {
@@ -498,6 +603,12 @@ input {
         display: flex;
         flex-direction: column;
     }
+
+    .container-2-1{
+        display: flex;
+        flex-direction: column;
+    }
+      
 
     .right-column{ 
         display: flex;
@@ -535,6 +646,16 @@ input {
         display: flex;
         justify-content: center;
         position: relative; 
+    }
+
+    .left-column-1{
+        justify-content: center;
+    }
+
+    .container-2-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
     }
 
 }
