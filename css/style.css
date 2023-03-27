@@ -175,6 +175,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
+    padding-bottom: 50px;
 }
 
 h1 {
@@ -251,7 +252,7 @@ input {
   }
   
   .rounded-input {
-    font-size: 50px;
+    font-size: 30px;
     text-transform: uppercase;
     background: var(--gradiante-invertido);
     border-radius: 12px;
@@ -337,6 +338,61 @@ input {
     border-radius: 10px;
 }
 
+/* Texto en div grid 3 column*/
+.textInDiv{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Imagen mujer estilos */
+.imgMuj{
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    margin-bottom: 35px;
+}
+
+.align-left{
+    text-align: left;
+}
+
+.separador-izquierdo {
+    border-left: 10px solid var(--textoBlanco);
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+
+/* Contenedor iconos */
+.iconos-contenedor {
+    display: flex;
+    justify-content: center;
+    position: relative; 
+}
+
+.linea {
+  position: absolute; /* Establece posición absoluta para posicionar la línea */
+  z-index: -1; /* Establece el valor de z-index para colocar la línea detrás de los iconos */
+  background-color: var(--color2); /* Establece el color de fondo de la línea */
+  height: 15px; /* Establece la altura de la línea */
+  width: 100%; /* Establece el ancho de la línea */
+  top: 50%; /* Establece la posición vertical de la línea */
+  transform: translateY(-50%); /* Ajusta la posición vertical de la línea */
+}
+
+.icono{
+    color: var(--textoBlanco);
+    background-color: var(--color1);
+    margin: 15px;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 50px;
+
+}
+.icono-1{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+  
+
 @media screen and (max-width: 768px) {
     .grande{
         max-width: 100%;
@@ -380,6 +436,18 @@ input {
     .rounded-box{
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .container-3{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .icono{
+        padding: 5px;
+    }
+    .icono-1{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
 
